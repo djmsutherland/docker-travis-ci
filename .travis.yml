@@ -1,6 +1,13 @@
+sudo: required
+
 language: node_js
+
 node_js:
-  - "stable"
+- stable
+
 cache:
   directories:
-    - "app/node_modules"
+  - node_modules
+
+services:
+  - docker
